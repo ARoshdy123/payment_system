@@ -2,14 +2,14 @@
 abstract class PaymentMethod {
   void pay(double amount);
 }
-// Credit payment
+// Credit payment that abstract from payment method class
 class CreditPayment implements PaymentMethod {
   @override
   void pay(double amount) {
     print("You paid $amount with Credit Card.");
   }
 }
-// CashPayment
+// CashPayment that abstract from payment method class
 class CashPayment implements PaymentMethod {
   @override
   void pay(double amount) {
@@ -17,7 +17,7 @@ class CashPayment implements PaymentMethod {
   }
 }
 
-
+// checkout class to get the payment method and the amount.
 class CheckOut {
   final PaymentMethod paymentMethod;
 

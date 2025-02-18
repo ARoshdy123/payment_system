@@ -1,16 +1,10 @@
 # payment_system
 
-A new Flutter project.
+Flutter task apply on **SOLID Principles** on payment system by creating payment class and its methods (cash payment, credit payment).
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Concrete Shape Classes:**
+    - `Single Responsibility`: Each class has one clear purpose.
+    - `Open/Closed`: Payment implementations can be extended without modifying existing code.
+    - `Liskov Substitution`:  Any Payment implementation can be Done.
+    - `Interface Segregation`: The project depends only on the Payment interface.
+    - `Dependency Inversion`: checkout depends on abstractions (Payment), not on other classes.
